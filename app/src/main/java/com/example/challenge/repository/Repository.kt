@@ -9,8 +9,6 @@ import io.reactivex.disposables.CompositeDisposable
 
 interface Repository {
 
-    fun getCompositeDisposableObject(): CompositeDisposable
-
     fun getForecastData(place:String,units:String,appid:String,context: Context)
 
     fun getWeatherListLiveData(): MutableLiveData<ApiResponse<List<Weather>>>

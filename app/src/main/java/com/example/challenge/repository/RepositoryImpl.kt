@@ -21,19 +21,13 @@ import kotlinx.coroutines.launch
 class RepositoryImpl constructor(
     private val db: AppDatabase
 ): Repository {
-    val compositeDisposable = CompositeDisposable()
     val weatherItemsResults = BehaviorSubject.create<List<Weather>>()
-
     val weatherResponseLiveData = MutableLiveData<ApiResponse<List<Weather>>>()
 
     init {
         db.weatherDao().getWeatherResults().subscribe {
             weatherItemsResults.onNext(it)
         }
-    }
-
-    override fun getCompositeDisposableObject(): CompositeDisposable {
-        return compositeDisposable
     }
 
     override fun getWeatherItemsResults(): Flowable<List<Weather>> {

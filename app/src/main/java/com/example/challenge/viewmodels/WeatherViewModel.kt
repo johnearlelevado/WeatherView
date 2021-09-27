@@ -10,13 +10,8 @@ open class WeatherViewModel @ViewModelInject constructor(
     val weatherItemsObservable
         get() = repository.getWeatherListLiveData()
 
-
-    init {
-        compositeDisposable = repository.getCompositeDisposableObject()
-    }
-
     /**
-     * Fetch itunes items
+     * Fetch weather items
      **/
     fun getWeatherItems(place:String,unit:String,appId:String,context: Context) {
         repository.getForecastData(place,unit,appId,context)

@@ -15,7 +15,6 @@ object AppUtil {
     /**
      * Set icon to imageView according to weather code status
      *
-     * @param context     instance of [Context]
      * @param imageView   instance of [android.widget.ImageView]
      * @param weatherCode code of weather status
      */
