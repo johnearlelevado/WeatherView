@@ -9,7 +9,6 @@
   - MVVM Pattern
   - ViewModel
   - LiveData
-  - RxJava
   - Android Volley
 
 ### Instrumentation Unit Test
