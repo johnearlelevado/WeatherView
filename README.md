@@ -1,18 +1,16 @@
-# Crime Map App Challenge
-  - I have removed the google maps key for security
-  - I have used clustering because there was too many pins to display
-  - Red pin - single crime on one location
-  - Green pin - multiple crimes on one location
+# WeatherView app
+  - I used open `https://openweathermap.org/api` API to populate the app, unfortunately, free forecasts is only for 5 days
+  - I used Volley networking library since we cannot use third party libraries like Retrofit 
+  
 
 ### Tech stack
-  - Retrofit2
-  - Google Maps
   - Dagger Hilt
   - View Binding
   - MVVM Pattern
   - ViewModel
   - LiveData
   - RxJava
+  - Android Volley
 
-### Unit Test
-  - ViewModel Test
+### Instrumentation Unit Test
+  - AppUtil Test
