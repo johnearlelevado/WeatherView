@@ -10,6 +10,7 @@
   - ViewModel
   - LiveData
   - Android Volley
+  - Android Room DB
 
 ### Instrumentation Unit Test
   - AppUtil Test
