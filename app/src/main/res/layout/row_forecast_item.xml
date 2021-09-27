@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_complete_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mon, 2021 08 09"
+        android:background="#3CF1EBF1"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3CF1EBF1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="SUN"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_date"
+            app:layout_constraintEnd_toEndOf="@+id/tv_date"
+            app:layout_constraintStart_toStartOf="@+id/tv_date"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="26/09"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/tv_time"
+            app:layout_constraintEnd_toEndOf="@+id/tv_time"
+            app:layout_constraintStart_toStartOf="@+id/tv_time"
+            app:layout_constraintTop_toBottomOf="@+id/tv_day" />
+
+        <ImageView
+            android:id="@+id/img_weather"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_date"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_rainy_weather" />
+
+        <TextView
+            android:id="@+id/tv_hi_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="36°"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/img_weather"
+            app:layout_constraintStart_toEndOf="@+id/img_weather"
+            app:layout_constraintTop_toTopOf="@+id/img_weather" />
+
+        <TextView
+            android:id="@+id/tv_low_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/ 20°"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_hi_temp"
+            app:layout_constraintStart_toEndOf="@+id/tv_hi_temp"
+            app:layout_constraintTop_toTopOf="@+id/tv_hi_temp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="10:00"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+    <Space
+        android:id="@+id/spc_hidden_daily_divider"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

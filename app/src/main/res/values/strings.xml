@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="offline">Offline</string>
+    <string name="search_hint">Search</string>
+    <string name="last_visit">Last visit: %s</string>
+    <string name="humidity_label">Humidity</string>
+    <string name="wind_label">Wind</string>
+    <string name="app_id">1ff3d24dc2bb546ce32f2e3b5dcf605d</string>
+</resources>
