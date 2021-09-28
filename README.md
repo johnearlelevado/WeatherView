@@ -1,9 +1,12 @@
 # WeatherView app
-  - I used open `https://openweathermap.org/api` API to populate the app, unfortunately, free forecasts is only for 5 days
-  - I used Volley networking library since we cannot use third party libraries like Retrofit 
 
 ### Download Here
 https://drive.google.com/file/d/1pC6XIh6cl_PIoVDvnqleo5yY5PKaJIiV/view?usp=sharing
+
+### Limitations
+  - I used open `https://openweathermap.org/api` API to populate the app. Unfortunately, free forecasts is only for 5 days not 10 days
+  - I used Volley networking library since we cannot use third party libraries like Retrofit
+  - Note that the API gives forecasts of 3 hour intervals for 5 days only so the list is divided into hours and days. The hours data can't be condensed into days. Doing so would malrepresent the correct weather data for that day
 
 ### Tech stack
   - Dagger Hilt
